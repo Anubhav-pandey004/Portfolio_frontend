@@ -6,7 +6,13 @@ import Loader from './NavComponents/Loader';
 useGLTF.preload('/scene.gltf');
 
 // Loader for fallback UI
-
+const Loader1 = () => {
+  return (
+    <Html center>
+      <Loader/>
+    </Html>
+  );
+};
 
 const Robot = ({ position }) => {
   const { scene } = useGLTF('/scene.gltf');
@@ -42,7 +48,7 @@ const ResponsiveRobot = () => {
 const Scene = () => {
   return (
     <Canvas camera={{ position: [0, 1, 5], fov: 50 }} style={{ width: '100vw', height: '100vh' }}>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<Loader1 />}>
         <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/1k/thatch_chapel_1k.exr" />
         <ResponsiveRobot />
       </Suspense>
