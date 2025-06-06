@@ -6,13 +6,7 @@ import Loader from './NavComponents/Loader';
 useGLTF.preload('/scene.gltf');
 
 // Loader for fallback UI
-const Loader = () => {
-  return (
-    <Html center>
-      <Loader/>
-    </Html>
-  );
-};
+
 
 const Robot = ({ position }) => {
   const { scene } = useGLTF('/scene.gltf');
