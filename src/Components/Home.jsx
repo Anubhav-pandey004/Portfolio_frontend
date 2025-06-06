@@ -65,11 +65,10 @@ const Home = () => {
           <CurcerFollow />
           <div
             ref={slider}
-            className="loading-window fixed top-0 left-[-100vw] w-[100vw] h-[100dvh] md:h-[100vh] overflow-auto bg-[#dddf00] z-0 flex flex-col justify-center items-center"
+            className="loading-window fixed top-0 left-[-100vw] w-[100vw] h-[100vh] md:pb-0 pb-6 md:h-[100vh] overflow-auto bg-[#dddf00] z-0 flex flex-col justify-center items-center"
           ></div>
         </>
       )}
-      {console.log("Loader state:", loader)}
       {loader && <Dashboard />}
       {/* <Dashboard/> */}
     </main>
