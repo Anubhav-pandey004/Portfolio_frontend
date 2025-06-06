@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { useCursor } from "../context/CursorContext";
+import { useCursor } from "../Context/CursorContext";
 
 const WarpRealityButton = ({ mainpage , slider , setShowParticles , setloader }) => {
   const loadingPercentage = useRef()
