@@ -6,7 +6,7 @@ html{
     overflow: hidden;
     height: fit-content;
     width: fit-content;
-    background-color: red;
+    background-color: black;
 }
 .cursor-dark {
     background: radial-gradient(circle, transparent, #22222267, #0000008d, #000000a9);
