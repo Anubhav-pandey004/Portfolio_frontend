@@ -1,16 +1,15 @@
 import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useGLTF, Environment, Html, useProgress } from '@react-three/drei';
-
+import { useGLTF, Environment, Html  } from '@react-three/drei';
+import Loader from './NavComponents/Loader';
 // ✅ Preload the robot model early
 useGLTF.preload('/scene.gltf');
 
 // Loader for fallback UI
 const Loader = () => {
-  const { progress } = useProgress();
   return (
     <Html center>
-      <p className="text-white text-lg animate-pulse">Loading {progress.toFixed(0)}%</p>
+      <Loader/>
     </Html>
   );
 };
