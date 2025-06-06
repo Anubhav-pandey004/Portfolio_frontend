@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    background-color: red;
+}
+.cursor-dark {
+    background: radial-gradient(circle, transparent, #22222267, #0000008d, #000000a9);
+  }
+  @font-face {
+    font-family: 'Logopixies';
+    src: url('/fonts/Logopixies-owwBB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e600ff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff00c8;
+}
+
+
