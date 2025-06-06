@@ -126,7 +126,7 @@ const WarpRealityButton = ({ mainpage , slider , setShowParticles , setloader })
       <p className="text2 font-light text-lg opacity-0">where code meets creativity!</p>
       </div>
       
-      <section ref={loadingPercentage} className="w-full flex justify-end items-end  text-white mix-blend-difference font-bold md:text-7xl text-5xl z-60 font-mono"
+      <section ref={loadingPercentage} className="w-full flex justify-end items-end  text-white mix-blend-difference font-bold md:text-7xl text-5xl md:mb-0 mb-5  z-60 font-mono"
       style={{
         color: "#312244", // Default white text
         mixBlendMode: "difference", // Changes color when overlapping
