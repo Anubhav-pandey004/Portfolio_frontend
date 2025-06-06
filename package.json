@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "@babel/core": "^7.26.9",
     "@gsap/react": "^2.1.2",
