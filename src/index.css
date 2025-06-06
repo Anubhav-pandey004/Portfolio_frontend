@@ -13,9 +13,10 @@ html{
   }
   @font-face {
     font-family: 'Logopixies';
-    src: url('/fonts/Logopixies-owwBB.ttf') format('truetype');
+    src: url('/fonts/Logopixies-owwBB.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
