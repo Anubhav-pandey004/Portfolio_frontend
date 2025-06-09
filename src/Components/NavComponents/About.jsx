@@ -21,8 +21,8 @@ const About = () => {
           id="about-text"
           className="font-serif text-sm font-extralight w-full lg:w-[60vw] text-slate-300"
         >
-          Hi, I’m Anubhav Pandey, a Full Stack Developer and Blockchain
-          enthusiast based in Pune. I specialize in building dynamic,
+          Hi, I’m Anubhav Pandey, a Full Stack Developer
+          based in Mumbai. I specialize in building dynamic,
           user-friendly web applications using the MERN stack and enjoy creating
           smooth, animated user experiences.
           <br />
