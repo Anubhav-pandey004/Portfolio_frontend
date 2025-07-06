@@ -29,7 +29,7 @@ const About = () => {
           <br />
           I’m passionate about exploring new technologies, contributing to
           open-source, and collaborating on innovative projects. Whether it’s
-          full-stack development or blockchain integration, I love turning ideas
+          full-stack development or AI integration, I love turning ideas
           into impactful solutions.
         </p>
 
