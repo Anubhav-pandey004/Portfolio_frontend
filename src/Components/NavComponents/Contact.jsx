@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 const AnimatedBackground = () => {
   const canvasRef = useRef(null);
