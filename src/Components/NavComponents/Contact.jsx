@@ -20,31 +20,59 @@ const AnimatedBackground = () => {
   const [loading, setLoading] = useState(false); // State to manage loading status
   const navigate = useNavigate();
 
-  const onSubmit = async (data) => {
-    const { email, subject, message } = data; // Destructure the form data
-    try {
-      setLoading(true); // Set loading to true when request starts
-      const response = await fetch(SummaryApi.sendEmail.url, {
-        method: SummaryApi.sendEmail.method, // Assuming this is POST or your preferred HTTP method
-        credentials: "include", // To include credentials like cookies if necessary
-        body: JSON.stringify({ email, subject, message }), // Send data (email, subject, and message)
-        headers: {
-          "Content-Type": "application/json", // Set the content type to JSON
-        },
-      });
-      const data = await response.json(); // Parse the JSON response from the backend
-      console.log(data);
+  // const onSubmit = async (data) => {
+  //   const { email, subject, message } = data; // Destructure the form data
+  //   try {
+  //     setLoading(true); // Set loading to true when request starts
+  //     const response = await fetch(SummaryApi.sendEmail.url, {
+  //       method: SummaryApi.sendEmail.method, // Assuming this is POST or your preferred HTTP method
+  //       credentials: "include", // To include credentials like cookies if necessary
+  //       body: JSON.stringify({ email, subject, message }), // Send data (email, subject, and message)
+  //       headers: {
+  //         "Content-Type": "application/json", // Set the content type to JSON
+  //       },
+  //     });
+  //     const data = await response.json(); // Parse the JSON response from the backend
+  //     console.log(data);
 
-      if (data.success) {
-      } else {
+  //     if (data.success) {
+  //     } else {
+  //     }
+  //   } catch (error) {
+  //     console.error("Error uploading file:", error);
+  //   } finally {
+  //     setLoading(false); // Set loading to false when request is complete
+  //   }
+  //   reset();
+  // };
+  const onSubmit = async (data) => {
+  setLoading(true);
+
+  emailjs
+    .send(
+      "service_5nltg8j",   // 🔑 Replace with your EmailJS service ID
+      "template_qhw5fzc",  // 🔑 Replace with your EmailJS template ID
+      {
+        // name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      },
+      "pxToYYrC88yUj07F9"    // 🔑 Replace with your EmailJS public key
+    )
+    .then(
+      (result) => {
+        console.log("✅ Success:", result.text);
+        setLoading(false);
+        reset();
+      },
+      (error) => {
+        console.error("❌ Error:", error.text);
+        setLoading(false);
       }
-    } catch (error) {
-      console.error("Error uploading file:", error);
-    } finally {
-      setLoading(false); // Set loading to false when request is complete
-    }
-    reset();
-  };
+    );
+};
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
