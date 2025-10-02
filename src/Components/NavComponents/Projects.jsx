@@ -99,7 +99,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="Projects-page relative px-3 mt-5 min-h-[150vh]">
+    <section className="Projects-page relative px-3 mt-5">
       {/* Center Vertical Line */}
       <div className="absolute top-24 left-1/2 w-[2px] h-full bg-white z-0"></div>
 
