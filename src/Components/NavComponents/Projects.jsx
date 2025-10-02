@@ -16,7 +16,7 @@ const Projects = () => {
       video: "/Projects/pro5_vdo.mp4",
       page: "/Projects/AI Agent for web-Development",
       slug: "ai-agent-for-web-development",
-      technologies: "MERN  Web-Sockets AI Integration Web-Container",
+      technologies: "MERN  OCR AI Integration",
       github: "https://github.com/Anubhav-pandey004/Foodpharma_Frontend",
       imageArray :[ "/Projects/p5 (1).png", "/Projects/p5 (2).png", "/Projects/p5 (3).png", "/Projects/p5 (4).png", "/Projects/p5 (5).png", "/Projects/p5 (6).png", "/Projects/p5 (7).png"],
     },
