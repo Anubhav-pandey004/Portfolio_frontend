@@ -9,6 +9,18 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "FoodPharma",
+      desc: "We all grab packaged food, but reading those tiny ingredient labels? 🤯 Not fun. That’s why I built FoodPharma – an AI-powered tool that makes it simple.\n🔍 Snap a pic of the label → OCR turns it into text\n🧠 AI analyzes ingredients & nutrition facts\n🚨 Flags harmful additives, excess sugar/salt, etc.\n🥦 Suggests healthier packaged alternatives you can actually buy",
+      link: "https://food-pharma.netlify.app/",
+      image: "/Projects/pro5_img.png",
+      video: "/Projects/pro5_vdo.mp4",
+      page: "/Projects/AI Agent for web-Development",
+      slug: "ai-agent-for-web-development",
+      technologies: "MERN  Web-Sockets AI Integration Web-Container",
+      github: "https://github.com/Anubhav-pandey004/Foodpharma_Frontend",
+      imageArray :[ "/Projects/p5 (1).png", "/Projects/p5 (2).png", "/Projects/p5 (3).png", "/Projects/p5 (4).png", "/Projects/p5 (5).png", "/Projects/p5 (6).png", "/Projects/p5 (7).png"],
+    },
+    {
       title: "AI Agent for web-Development",
       desc: "Built an AI-powered web development assistant that generates full-stack MERN projects from natural language prompts. Integrated features like enhanced prompt handling, local project saving, and real-time AI interaction using Web-Sockets.",
       link: "https://ai-agent-web.netlify.app/",
