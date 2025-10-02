@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "AI Agent for web-Development",
       desc: "Built an AI-powered web development assistant that generates full-stack MERN projects from natural language prompts. Integrated features like enhanced prompt handling, local project saving, and real-time AI interaction using Web-Sockets.",
-      link: "https://ai-webdeveloper-frontend.onrender.com/",
+      link: "https://ai-agent-web.netlify.app/",
       image: "/Projects/pro1_img.png",
       video: "/Projects/pro1_vdo.mp4",
       page: "/Projects/AI Agent for web-Development",
