@@ -19,7 +19,7 @@ const About = () => {
         </h1>
         <p
           id="about-text"
-          className="font-serif text-sm font-extralight w-full lg:w-[60vw] text-slate-300"
+          className="font-serif pr-5 text-sm font-extralight w-full lg:w-[60vw] text-slate-300"
         >
           Hi, I’m Anubhav Pandey, a Full Stack Developer
           based in Mumbai. I specialize in building dynamic,
@@ -34,24 +34,24 @@ const About = () => {
         </p>
 
         {/* Skill Boxes */}
-        <section className="flex flex-col md:flex-row md:flex-wrap w-full lg:w-[60vw] gap-4 mt-6">
+        <section className="flex p-5 flex-col md:flex-row md:flex-wrap w-full lg:w-[60vw] gap-4 mt-6">
           <div
             id="test"
-            className="hover:scale-105 transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] "
+            className="hover:scale-105  transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] "
           >
             Skilled in developing full-stack web applications using MongoDB,
             Express.js, React.js, and Node.js with RESTful APIs.
           </div>
-          <div  className="hover:scale-105 transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
+          <div  className="hover:scale-105  transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
             Strong command of modern frontend tools including React, Tailwind
             CSS, and responsive UI/UX design principles.
           </div>
-          <div  className="hover:scale-105 transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
+          <div  className="hover:scale-105  transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
             Experienced in designing scalable backend architectures, integrating
             databases (MongoDB, MySQL), and handling CRUD operations
             efficiently.
           </div>
-          <div  className="hover:scale-105 transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
+          <div  className="hover:scale-105  transition-all font-serif box-item md:h-[11vw] h-[50vw]   flex items-center justify-center md:w-[40%] lg:w-[38%] rounded-lg p-2 text-[#dbacff] border border-[#a738fd] bg-gradient-to-t from-[#0b0311] via-[#260d3a] to-[#3c1958] ">
             Regularly practice data structures and algorithms on platforms like
             LeetCode and Codeforces to sharpen problem-solving and coding logic.
           </div>
