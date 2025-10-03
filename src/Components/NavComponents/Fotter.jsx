@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 
 const Fotter = () => {
   return (
-    <div className="fixed bottom-0 left-0 w-full z-30 bg-black text-white p-6 flex md:flex-row gap-3 flex-col items-center justify-around">
+<div className=" z-30 md:mb-10 scroll-container text-white p-6 flex md:flex-row gap-3 flex-col items-center justify-around">
       <div className="flex flex-col items-start text-gray-500 ">
         <p className="text-[#6b3a61db] mb-3 md:text-lg text-sm italic ">Crafting cool code and slick UIs — one pixel at a time.</p>©{" "}
         {new Date().getFullYear()} Anubhav Pandey. All rights reserved.
