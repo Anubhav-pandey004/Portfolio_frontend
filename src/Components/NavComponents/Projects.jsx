@@ -101,7 +101,7 @@ const Projects = () => {
   return (
     <section className="Projects-page relative px-3 mt-5">
       {/* Center Vertical Line */}
-      <div className="absolute top-24 left-1/2 w-[2px] h-full bg-white z-0"></div>
+      <div className="absolute top-24 left-1/2 w-[2px] h-[90%] pt-5 bg-white z-0"></div>
 
 
       <h1 className="text-5xl md:text-4xl font-logopixies py-7 relative z-10 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
