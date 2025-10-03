@@ -45,7 +45,7 @@ const Dashboard = () => {
       </section>
       <section
         id="page"
-        className="page2  md:h-[320vh] h-[420vh] w-screen bg-gradient-to-b from-[]"
+        className="page2 w-screen bg-gradient-to-b from-[]"
       >
         <Projects pageRef={pageRef} />
       </section>
