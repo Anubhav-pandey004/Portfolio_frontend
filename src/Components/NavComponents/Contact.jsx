@@ -19,6 +19,8 @@ const AnimatedBackground = () => {
     formState: { errors },
   } = useForm();
   const [loading, setLoading] = useState(false); // State to manage loading status
+  const [showThankYou, setShowThankYou] = useState(false);
+
   const navigate = useNavigate();
 
   // const onSubmit = async (data) => {
@@ -249,20 +251,18 @@ useEffect(() => {
         />
       </svg>
       {showThankYou && (
-  <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
-    <div className="bg-white rounded-xl p-8 shadow-xl relative max-w-sm w-full text-center">
-      <button
-        onClick={() => setShowThankYou(false)}
-        className="absolute top-3 right-3 text-xl font-bold text-gray-600 hover:text-gray-900"
-      >
-        ×
-      </button>
-      <h2 className="text-2xl font-bold mb-2">Thank You! 🎉</h2>
-      <p className="text-gray-700">Your message has been sent successfully.</p>
-    </div>
-  </div>
-)}
-
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
+        <div className="bg-white rounded-xl p-8 shadow-xl relative max-w-sm w-full text-center">
+          <button
+           onClick={() => setShowThankYou(false)}
+           className="absolute top-3 right-3 text-xl font-bold text-gray-600 hover:text-gray-900">
+           ×
+          </button>
+          <h2 className="text-2xl font-bold mb-2">Thank You! 🎉</h2>
+          <p className="text-gray-700">Your message has been sent successfully.</p>
+         </div>
+        </div>
+       )}
     </div>
   );
 };
