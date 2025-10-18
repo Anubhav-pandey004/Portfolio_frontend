@@ -88,7 +88,7 @@ const FirstCompo = () => {
         <button
         onClick={() => {
           window.open(
-            "https://drive.google.com/file/d/1NaxO9wJGWp1IEHVkr9_peu46pUUee4ru/view?usp=sharing",
+            "https://drive.google.com/file/d/1CqmA3C9BWYTU5sympGSbfrGdLyB3CNjy/view?usp=sharing",
             "_blank"
           );
         }}
