@@ -103,14 +103,6 @@ const AnimatedBackground = () => {
         phase: Math.random() * Math.PI * 2,
       };
     });
-useEffect(() => {
-  if (showThankYou) {
-    const timer = setTimeout(() => setShowThankYou(false), 4000);
-    return () => clearTimeout(timer);
-  }
-}, [showThankYou]);
-
-
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       dots.forEach((dot) => {
@@ -140,6 +132,12 @@ useEffect(() => {
       window.removeEventListener("resize", resize);
     };
   }, []);
+useEffect(() => {
+  if (showThankYou) {
+    const timer = setTimeout(() => setShowThankYou(false), 4000);
+    return () => clearTimeout(timer);
+  }
+}, [showThankYou]);
 
   return (
     <div className="scroll-container z-20 flex-col justify-center items-center mb-20 fixed top-0 overflow-x-hidden h-screen w-screen overflow-auto">
